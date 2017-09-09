@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import {createStore} from 'redux';
-import {Provider} from 'react-redux';
+import React, { Component } from 'react';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 import Header from '../components/shared/Header';
 import ProductsContainer from './ProductsContainer';
 import CartContainer from './CartContainer';
@@ -14,10 +14,10 @@ class AppContainer extends Component {
         return (
             <Provider store={store}>
                 <div>
-                  <Header/>
+                    <Header />
                     <Router>
-                        <Router.Route path="#/products" component={ProductsContainer}/>
-                        <Router.Route path="#/cart" component={CartContainer}/>
+                        <Router.Route path="#/products" component={ProductsContainer} />
+                        <Router.Route path="#/cart" component={CartContainer} />
                     </Router>
                 </div>
             </Provider>
