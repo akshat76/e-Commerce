@@ -1,11 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-
-
-class CartIcon extends Component 
-{
+class CartIcon extends Component {
     render() {
-       
+
         return (
             <h3> Hi,Icon </h3>
         );
